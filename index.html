@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
+01/12/2024 07:19:58 -->
+
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1280, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:700,800|Lexend+Exa:600");
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/674bfbc28d666a8b36b3d853.674bfbc38d666a8b36b3d856.AQhPhZi.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --alto: #d9d9d9;
+  --black: #000000;
+  --goldenrod: #ffdf79;
+  --white: #ffffff;
+ 
+  --font-size-l: 24px;
+  --font-size-m: 20px;
+  --font-size-s: 15px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 36px;
+  --font-size-xxxl: 40px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-lexend_exa: "Lexend Exa", Helvetica;
+}
+.inter-extra-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-extra-bold-white-32px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-extra-bold-goldenrod-20px {
+  color: var(--goldenrod);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-extra-bold-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-extra-bold-white-40px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+
+
+/* screen - wulan */
+
+.wulan {
+  background-color: var(--black);
+  height: 4792px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.wulan .home-Z2RMew {
+  left: 558px;
+  top: 34px;
+}
+
+.wulan .home-4VkPmA {
+  left: 556px;
+  top: 2018px;
+}
+
+.wulan .home-n5WtqT {
+  left: 556px;
+  top: 1102px;
+  white-space: nowrap;
+}
+
+.wulan .about-Z2RMew {
+  left: 660px;
+  top: 34px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .about-4VkPmA {
+  left: 660px;
+  top: 34px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .about-n5WtqT {
+  left: 660px;
+  top: 34px;
+  width: 62px;
+}
+
+.wulan .about-ssRpCF {
+  left: 660px;
+  top: 34px;
+  width: 62px;
+}
+
+.wulan .about-NQNppw {
+  left: 660px;
+  top: 34px;
+  width: 62px;
+}
+
+.wulan .about-ihyrdP {
+  left: 660px;
+  top: 34px;
+  width: 62px;
+}
+
+.wulan .about-WcHdgn {
+  left: 679px;
+  top: 2018px;
+  width: 62px;
+}
+
+.wulan .about-Vra718 {
+  left: 671px;
+  top: 1102px;
+  width: 62px;
+}
+
+.wulan .education-Z2RMew {
+  left: 769px;
+  top: 34px;
+  width: auto;
+}
+
+.wulan .education-4VkPmA {
+  left: 782px;
+  top: 1101px;
+  width: 101px;
+}
+
+.wulan .education-n5WtqT {
+  left: 799px;
+  top: 2020px;
+  width: auto;
+}
+
+.wulan .education-ssRpCF {
+  left: 799px;
+  top: 2020px;
+  width: auto;
+}
+
+.wulan .skill-Z2RMew {
+  left: 925px;
+  top: 34px;
+  width: 43px;
+}
+
+.wulan .skill-4VkPmA {
+  left: 941px;
+  top: 1106px;
+  width: 43px;
+}
+
+.wulan .skill-n5WtqT {
+  left: 949px;
+  top: 2023px;
+  width: 62px;
+}
+
+.wulan .project-Z2RMew {
+  left: 1023px;
+  top: 34px;
+  width: auto;
+}
+
+.wulan .project-4VkPmA {
+  left: 1025px;
+  top: 1108px;
+  width: auto;
+}
+
+.wulan .project-n5WtqT {
+  left: 1031px;
+  top: 2024px;
+  width: auto;
+}
+
+.wulan .group-5-Z2RMew {
+  background-color: transparent;
+  height: 33px;
+  left: 561px;
+  position: absolute;
+  top: 2939px;
+  width: 553px;
+}
+
+.wulan .home-v3opJn {
+  left: 0px;
+  top: 0px;
+}
+
+.wulan .about-v3opJn {
+  left: 129px;
+  top: 2px;
+  width: 62px;
+}
+
+.wulan .education-v3opJn {
+  left: 239px;
+  top: 2px;
+  width: auto;
+}
+
+.wulan .skill-v3opJn {
+  left: 384px;
+  top: 7px;
+  width: 62px;
+}
+
+.wulan .skill-vrk7AE {
+  left: 384px;
+  top: 7px;
+  width: 62px;
+}
+
+.wulan .project-v3opJn {
+  left: 470px;
+  top: 7px;
+  width: auto;
+}
+
+.wulan .group-7-Z2RMew {
+  background-color: transparent;
+  height: 30px;
+  left: 579px;
+  position: absolute;
+  top: 3849px;
+  width: 533px;
+}
+
+.wulan .home-o5Bd9h {
+  left: 0px;
+  top: 0px;
+  white-space: nowrap;
+}
+
+.wulan .about-o5Bd9h {
+  left: 111px;
+  top: 1px;
+  width: 62px;
+}
+
+.wulan .education-o5Bd9h {
+  left: 221px;
+  top: 1px;
+  width: 101px;
+}
+
+.wulan .skill-o5Bd9h {
+  left: 376px;
+  top: 1px;
+  width: 62px;
+}
+
+.wulan .project-o5Bd9h {
+  left: 452px;
+  top: 0px;
+  width: 71px;
+}
+
+.wulan .group-3-Z2RMew {
+  background-color: transparent;
+  height: 189px;
+  left: 110px;
+  position: absolute;
+  top: 276px;
+  width: 431px;
+}
+
+.wulan .hello-SxnV3n {
+  background-color: transparent;
+  color: var(--goldenrod);
+  font-family: var(--font-family-lexend_exa);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.wulan .i-like-creating-a-cool-design-project-SxnV3n {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 160px;
+  width: 423px;
+}
+
+.wulan .i-m-SxnV3n {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .wulan-SxnV3n {
+  background-color: transparent;
+  color: var(--goldenrod);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  left: 92px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: 129px;
+}
+
+.wulan .group-1-Z2RMew {
+  background-color: transparent;
+  height: 398px;
+  left: 332px;
+  position: absolute;
+  top: 1450px;
+  width: 635px;
+}
+
+.wulan .title-Z2RMew {
+  background-color: transparent;
+  height: auto;
+  left: 517px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3107px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .project-ssRpCF {
+  left: 564px;
+  top: 4021px;
+  width: auto;
+}
+
+.wulan .uu-Z2RMew {
+  background-color: transparent;
+  height: 318px;
+  left: 64px;
+  object-fit: cover;
+  position: absolute;
+  top: 4188px;
+  width: 250px;
+}
+
+.wulan .ttt-Z2RMew {
+  background-color: transparent;
+  height: 318px;
+  left: 360px;
+  object-fit: cover;
+  position: absolute;
+  top: 4188px;
+  width: 254px;
+}
+
+.wulan .bbb-Z2RMew {
+  background-color: transparent;
+  height: 318px;
+  left: 664px;
+  object-fit: cover;
+  position: absolute;
+  top: 4188px;
+  width: 250px;
+}
+
+.wulan .fff-Z2RMew {
+  background-color: transparent;
+  height: 318px;
+  left: 964px;
+  object-fit: cover;
+  position: absolute;
+  top: 4188px;
+  width: 250px;
+}
+
+.wulan .rectangle-27-Z2RMew {
+  background-color: var(--black);
+  border: 2px solid;
+  border-color: #ffdf79e6;
+  height: 498px;
+  left: 250px;
+  position: absolute;
+  top: 2302px;
+  width: 781px;
+}
+
+.wulan .group-2-Z2RMew {
+  background-color: transparent;
+  height: 405px;
+  left: 336px;
+  position: absolute;
+  top: 2343px;
+  width: 640px;
+}
+
+.wulan .x2012-2013-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.wulan .tk-al-azzhar-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 280px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.wulan .x2014-2019-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 121px;
+  width: auto;
+}
+
+.wulan .sdn-sukamenak-iii-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 277px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 130px;
+  width: auto;
+}
+
+.wulan .x2020-2023-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 240px;
+  width: auto;
+}
+
+.wulan .smpn-negeri-1-maja-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 277px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 242px;
+  width: auto;
+}
+
+.wulan .x2023-now-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 366px;
+  width: auto;
+}
+
+.wulan .smkn-1-maja-1uPaLF {
+  background-color: transparent;
+  height: auto;
+  left: 280px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 363px;
+  white-space: nowrap;
+  width: 252px;
+}
+
+.wulan .wlnpng-Z2RMew {
+  background-color: transparent;
+  height: 500px;
+  left: 614px;
+  object-fit: cover;
+  position: absolute;
+  top: 388px;
+  width: 571px;
+}
+
+.wulan .group-4-Z2RMew {
+  background-color: transparent;
+  height: 48px;
+  left: 515px;
+  position: absolute;
+  top: 1270px;
+  width: 203px;
+}
+
+.wulan .about-me-SRRj77 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .education-NQNppw {
+  left: 489px;
+  top: 2157px;
+  width: auto;
+}
+
+.wulan .group-6-Z2RMew {
+  background-color: transparent;
+  height: 384px;
+  left: 90px;
+  position: absolute;
+  top: 3267px;
+  width: 1135px;
+}
+
+.wulan .php-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 6px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.wulan .figma-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 587px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.wulan .rectangle-8-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 65px;
+  width: 524px;
+}
+
+.wulan .rectangle-16-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 65px;
+  width: 434px;
+}
+
+.wulan .rectangle-12-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 209px;
+  width: 524px;
+}
+
+.wulan .rectangle-17-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 209px;
+  width: 434px;
+}
+
+.wulan .rectangle-14-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 587px;
+  position: absolute;
+  top: 209px;
+  width: 524px;
+}
+
+.wulan .rectangle-13-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 357px;
+  width: 524px;
+}
+
+.wulan .rectangle-18-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 358px;
+  width: 428px;
+}
+
+.wulan .rectangle-15-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 582px;
+  position: absolute;
+  top: 362px;
+  width: 524px;
+}
+
+.wulan .rectangle-20-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 587px;
+  position: absolute;
+  top: 209px;
+  width: 477px;
+}
+
+.wulan .rectangle-21-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 582px;
+  position: absolute;
+  top: 362px;
+  width: 482px;
+}
+
+.wulan .rectangle-11-ipDOup {
+  background-color: var(--alto);
+  border-radius: 30px;
+  height: 22px;
+  left: 582px;
+  position: absolute;
+  top: 65px;
+  width: 524px;
+}
+
+.wulan .css-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 6px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 305px;
+  width: auto;
+}
+
+.wulan .html-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 6px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 144px;
+  width: auto;
+}
+
+.wulan .word-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 587px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 157px;
+  width: auto;
+}
+
+.wulan .canva-ipDOup {
+  background-color: transparent;
+  height: auto;
+  left: 587px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 314px;
+  width: auto;
+}
+
+.wulan .rectangle-24-ipDOup {
+  background-color: var(--goldenrod);
+  border-radius: 30px;
+  height: 22px;
+  left: 582px;
+  position: absolute;
+  top: 65px;
+  width: 439px;
+}
+
+.wulan .x85-ipDOup {
+  left: 453px;
+  top: 25px;
+}
+
+.wulan .x85-Udczaj {
+  left: 1041px;
+  top: 25px;
+}
+
+.wulan .x85-HpXDFz {
+  left: 456px;
+  top: 176px;
+}
+
+.wulan .x85-6tx7Zz {
+  left: 455px;
+  top: 321px;
+}
+
+.wulan .x90-ipDOup {
+  top: 176px;
+}
+
+.wulan .x90-Udczaj {
+  top: 326px;
+}
+
+.wulan .group-8-Z2RMew {
+  background-color: transparent;
+  height: 24px;
+  left: 554px;
+  position: absolute;
+  top: 4748px;
+  width: 176px;
+}
+
+.wulan .x2024-Kfib6F {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 98px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 74px;
+}
+
+.wulan .copyright-Kfib6F {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 98px;
+}
+
+.wulan .group-10-Z2RMew {
+  background-color: transparent;
+  height: 64px;
+  left: 110px;
+  position: absolute;
+  top: 868px;
+  width: 329px;
+}
+
+.wulan .group-9-UH1FiP {
+  background-color: transparent;
+  height: 64px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 327px;
+}
+
+.wulan .rectangle-28-FA4SmS {
+  background-color: var(--black);
+  border: 5px solid;
+  border-color: var(--goldenrod);
+  border-radius: 50px;
+  height: 64px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 327px;
+}
+
+.wulan .my-portfolio-UH1FiP {
+  background-color: transparent;
+  height: auto;
+  left: 42px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: auto;
+}
+
+.wulan .arrow-1-UH1FiP {
+  background-color: transparent;
+  height: 24px;
+  left: 241px;
+  position: absolute;
+  top: 20px;
+  width: 39px;
+}
+
+.wulan .ws-Z2RMew {
+  background-color: transparent;
+  height: 63px;
+  left: 61px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 164px;
+}
+
+.wulan .about {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.wulan .education {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wulan .home {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: 66px;
+}
+
+.wulan .project {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wulan .skill {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wulan .x85 {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.wulan .x90 {
+  background-color: transparent;
+  height: auto;
+  left: 1041px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+</style></head><body style="margin: 0;background: #000000;"><input type="hidden" id="anPageName" name="page" value="wulan"><div class="container-center-horizontal"><div class="wulan screen " data-id="1:2"><div class="home-Z2RMew home inter-extra-bold-goldenrod-20px" data-id="2:2">Home</div><div class="home-4VkPmA home inter-extra-bold-white-20px" data-id="15:3">Home</div><div class="home-n5WtqT home inter-extra-bold-white-20px" data-id="10:13">Home</div><div class="about-Z2RMew about inter-extra-bold-white-20px" data-id="2:5">About</div><div class="about-4VkPmA about inter-extra-bold-white-20px" data-id="10:14">About</div><div class="about-n5WtqT about inter-extra-bold-white-20px" data-id="10:15">About</div><div class="about-ssRpCF about inter-extra-bold-white-20px" data-id="15:4">About</div><div class="about-NQNppw about inter-extra-bold-white-20px" data-id="15:5">About</div><div class="about-ihyrdP about inter-extra-bold-white-20px" data-id="15:6">About</div><div class="about-WcHdgn about inter-extra-bold-white-20px" data-id="15:8">About</div><div class="about-Vra718 about inter-extra-bold-goldenrod-20px" data-id="10:16">About</div><div class="education-Z2RMew education inter-extra-bold-white-20px" data-id="2:6">Education</div><div class="education-4VkPmA education inter-extra-bold-white-20px" data-id="10:20">Education</div><div class="education-n5WtqT education inter-extra-bold-goldenrod-20px" data-id="15:11">Education</div><div class="education-ssRpCF education inter-extra-bold-goldenrod-20px" data-id="16:18">Education</div><div class="skill-Z2RMew skill inter-extra-bold-white-20px" data-id="2:7">Skill</div><div class="skill-4VkPmA skill inter-extra-bold-white-20px" data-id="10:18">Skill</div><div class="skill-n5WtqT skill inter-extra-bold-white-20px" data-id="15:10">Skill</div><div class="project-Z2RMew project inter-extra-bold-white-20px" data-id="2:8">Project</div><div class="project-4VkPmA project inter-extra-bold-white-20px" data-id="11:2">Project</div><div class="project-n5WtqT project inter-extra-bold-white-20px" data-id="15:14">Project</div><div class="group-5-Z2RMew" data-id="53:39"><div class="home-v3opJn home inter-extra-bold-white-20px" data-id="16:16">Home</div><div class="about-v3opJn about inter-extra-bold-white-20px" data-id="16:17">About</div><div class="education-v3opJn education inter-extra-bold-white-20px" data-id="16:19">Education</div><div class="skill-v3opJn skill inter-extra-bold-goldenrod-20px" data-id="16:21">Skill</div><div class="skill-vrk7AE skill inter-extra-bold-goldenrod-20px" data-id="19:8">Skill</div><div class="project-v3opJn project inter-extra-bold-white-20px" data-id="16:22">Project</div></div><div class="group-7-Z2RMew" data-id="53:41"><div class="home-o5Bd9h home inter-extra-bold-white-20px" data-id="18:13">Home</div><div class="about-o5Bd9h about inter-extra-bold-white-20px" data-id="18:14">About</div><div class="education-o5Bd9h education inter-extra-bold-white-20px" data-id="18:15">Education</div><div class="skill-o5Bd9h skill inter-extra-bold-white-20px" data-id="19:10">Skill</div><div class="project-o5Bd9h project inter-extra-bold-goldenrod-20px" data-id="19:11">Project</div></div><div class="group-3-Z2RMew" data-id="53:34"><div class="hello-SxnV3n" data-id="7:3">HELLO!</div><p class="i-like-creating-a-cool-design-project-SxnV3n" data-id="7:4">I&nbsp;&nbsp;like creating a cool design project.</p><div class="i-m-SxnV3n inter-extra-bold-white-40px" data-id="8:6">I’ m</div><div class="wulan-SxnV3n" data-id="9:9">Wulan</div></div><img class="group-1-Z2RMew" data-id="52:7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/group-1.png" alt="Group 1"><h1 class="title-Z2RMew inter-extra-bold-white-40px" data-id="17:3">My Skill</h1><div class="project-ssRpCF project inter-extra-bold-white-40px" data-id="19:13">Project</div><img class="uu-Z2RMew" data-id="20:16" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/uu.png" alt="uu"><img class="ttt-Z2RMew" data-id="53:36" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/ttt.png" alt="ttt"><img class="bbb-Z2RMew" data-id="53:37" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/bbb.png" alt="bbb"><img class="fff-Z2RMew" data-id="53:38" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/fff.png" alt="fff"><div class="rectangle-27-Z2RMew" data-id="53:33"></div><div class="group-2-Z2RMew" data-id="53:14"><div class="x2012-2013-1uPaLF inter-extra-bold-white-32px" data-id="21:6">2012 - 2013</div><div class="tk-al-azzhar-1uPaLF inter-extra-bold-white-32px" data-id="21:8">TK AL-AZZHAR</div><div class="x2014-2019-1uPaLF inter-extra-bold-white-32px" data-id="21:9">2014 - 2019</div><div class="sdn-sukamenak-iii-1uPaLF inter-extra-bold-white-32px" data-id="21:10">SDN SUKAMENAK III</div><div class="x2020-2023-1uPaLF inter-extra-bold-white-36px" data-id="21:12">2020 - 2023</div><div class="smpn-negeri-1-maja-1uPaLF inter-extra-bold-white-32px" data-id="21:13">SMPN NEGERI 1 MAJA</div><div class="x2023-now-1uPaLF inter-extra-bold-white-32px" data-id="21:14">2023 - NOW</div><div class="smkn-1-maja-1uPaLF inter-extra-bold-white-32px" data-id="21:15">SMKN 1 MAJA</div></div><img class="wlnpng-Z2RMew" data-id="47:3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/wln-png.png" alt="wln.png"><div class="group-4-Z2RMew" data-id="53:35"><div class="about-me-SRRj77 inter-extra-bold-white-40px" data-id="53:9">About&nbsp;&nbsp;Me</div></div><div class="education-NQNppw education inter-extra-bold-white-40px" data-id="53:15">Education</div><div class="group-6-Z2RMew" data-id="53:40"><div class="php-ipDOup inter-extra-bold-white-36px" data-id="17:7">php</div><div class="figma-ipDOup inter-extra-bold-white-36px" data-id="21:3">figma</div><div class="rectangle-8-ipDOup" data-id="18:8"></div><div class="rectangle-16-ipDOup" data-id="22:2"></div><div class="rectangle-12-ipDOup" data-id="19:4"></div><div class="rectangle-17-ipDOup" data-id="22:3"></div><div class="rectangle-14-ipDOup" data-id="19:6"></div><div class="rectangle-13-ipDOup" data-id="19:5"></div><div class="rectangle-18-ipDOup" data-id="22:4"></div><div class="rectangle-15-ipDOup" data-id="19:7"></div><div class="rectangle-20-ipDOup" data-id="22:7"></div><div class="rectangle-21-ipDOup" data-id="22:8"></div><div class="rectangle-11-ipDOup" data-id="19:3"></div><div class="css-ipDOup inter-extra-bold-white-36px" data-id="18:11">CSS</div><div class="html-ipDOup inter-extra-bold-white-36px" data-id="18:9">HTML</div><div class="word-ipDOup inter-extra-bold-white-36px" data-id="21:4">word</div><div class="canva-ipDOup inter-extra-bold-white-36px" data-id="21:5">canva</div><div class="rectangle-24-ipDOup" data-id="53:25"></div><div class="x85-ipDOup x85 inter-extra-bold-white-20px" data-id="53:19">85%</div><div class="x85-Udczaj x85 inter-extra-bold-white-20px" data-id="53:22">85%</div><div class="x85-HpXDFz x85 inter-extra-bold-white-20px" data-id="53:20">85%</div><div class="x85-6tx7Zz x85 inter-extra-bold-white-20px" data-id="53:21">85%</div><div class="x90-ipDOup x90 inter-extra-bold-white-20px" data-id="53:27">90%</div><div class="x90-Udczaj x90 inter-extra-bold-white-20px" data-id="53:28">90%</div></div><div class="group-8-Z2RMew" data-id="59:12"><div class="x2024-Kfib6F" data-id="59:10">][ 2024</div><div class="copyright-Kfib6F" data-id="55:43">Copyright</div></div><div class="group-10-Z2RMew" data-id="59:14"><div class="group-9-UH1FiP" data-id="59:13"><div class="rectangle-28-FA4SmS" data-id="58:2"></div></div><div class="my-portfolio-UH1FiP inter-extra-bold-white-32px" data-id="58:6">My Portfolio</div><img class="arrow-1-UH1FiP" data-id="58:8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674c0e1b1bb8e4f5c404b4bd/img/arrow-1.svg" alt="Arrow 1"></div><img class="ws-Z2RMew" data-id="60:17" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/674bfbc48d666a8b36b3d858/releases/674bfc4b390135c71e14e5c5/img/ws.png" alt="ws"></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
